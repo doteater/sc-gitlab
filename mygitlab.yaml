@@ -87,6 +87,8 @@ spec:
           display_name: 'GitLab'
           from: 'noreply@sentracam.com'
           reply_to: 'noreply@sentracam.com'
+        pages:
+          enabled: true
       certmanager-issuer:
         email: cory.johnson@sentracam.com # use your real email address here
       nginx-ingress:
@@ -95,4 +97,13 @@ spec:
         install: false
       postgresql:
         install: false
+      gitlab:
+        gitlab-pages:
+          ingress:
+            tls:
+              # You need to bring your own wildcard SSL certificate which covers
+              # `*.<pages root domain>`. Create a k8s TLS secret with the name
+              # `my-custom-pages-tls` with it.
+              secretName: gitlab-pages-tls-wildcard
+
 #
