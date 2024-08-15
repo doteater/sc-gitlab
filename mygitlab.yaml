@@ -104,6 +104,6 @@ spec:
               # You need to bring your own wildcard SSL certificate which covers
               # `*.<pages root domain>`. Create a k8s TLS secret with the name
               # `my-custom-pages-tls` with it.
-              secretName: gitlab-pages-tls-wildcard
+              secretName: gitlab-pages-wildcard
 
 #
