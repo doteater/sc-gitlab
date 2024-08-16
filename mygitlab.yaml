@@ -8,6 +8,11 @@ spec:
     version: "8.2.2" # https://gitlab.com/gitlab-org/cloud-native/gitlab-operator/-/blob/<OPERATOR_VERSION>/CHART_VERSIONS
     values:
       global:
+        appconfig:
+          omniauth:
+            allowSingleSignOn: oauth2_generic
+            providers:
+              - secret: gitlab-oauth2-generic
         hosts:
           domain: sentracam.net # use a real domain here
           externalIP: 10.9.15.100
