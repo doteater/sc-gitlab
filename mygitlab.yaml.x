@@ -10,7 +10,7 @@ spec:
       global:
         appconfig:
           omniauth:
-            allowSingleSignOn: oauth2_generic
+            allowSingleSignOn: ['oauth2_generic']
             providers:
               - secret: gitlab-oauth2-generic
         hosts:
