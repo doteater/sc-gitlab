@@ -11,9 +11,12 @@ spec:
         appconfig:
           omniauth:
             enabled: true
-            allowSingleSignOn: ['oauth2_generic']
+            #allowSingleSignOn: ['oauth2_generic']
+            allowSignleSignOn: ['zoho']
+            blockAutoCreatedUsers: false
             providers:
-              - secret: gitlab-oauth2-generic
+              #- secret: gitlab-oauth2-generic
+              - secret: gitlab-oauth2-zoho
         hosts:
           domain: sentracam.net # use a real domain here
           externalIP: 10.9.15.100
