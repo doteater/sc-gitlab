@@ -23,7 +23,7 @@ spec:
           externalIP: 10.9.15.100
         ingress:
           configureCertmanager: true
-          class: nginx
+          class: nginx-20
           annotations:
             cert-manager.io/cluster-issuer: "letsencrypt-cluster-issuer"
           tls:
