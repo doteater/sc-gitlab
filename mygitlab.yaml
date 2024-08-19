@@ -8,7 +8,7 @@ spec:
     version: "8.2.2" # https://gitlab.com/gitlab-org/cloud-native/gitlab-operator/-/blob/<OPERATOR_VERSION>/CHART_VERSIONS
     values:
       global:
-        appconfig:
+        appConfig:
           omniauth:
             enabled: true
             allowSingleSignOn: ['openid_connect']
