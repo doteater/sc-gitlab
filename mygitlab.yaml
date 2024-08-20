@@ -11,7 +11,7 @@ spec:
         #removeme, debugging cert
         certificates:
           customCAs:
-            - secret: mitmproxysecret
+            - secret: secret-custom-ca
         appConfig:
           omniauth:
             enabled: true
