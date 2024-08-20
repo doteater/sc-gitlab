@@ -9,9 +9,9 @@ spec:
     values:
       global:
         #removeme, debugging cert
-        certificates:
-          customCAs:
-            - secret: secret-custom-ca
+        #certificates:
+        #  customCAs:
+        #    - secret: secret-custom-ca
         appConfig:
           omniauth:
             enabled: true
