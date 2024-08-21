@@ -130,5 +130,5 @@ spec:
           #<<: *custom
           init:
             image:
-              repository: custom-repository
-              tag: 1.2.3-example
+              repository: cjohnson282/my-gitlab-ee
+              tag: latest
