@@ -130,5 +130,5 @@ spec:
           #<<: *custom
           init:
             image: image
-              - repository: custom-repository
-              - tag: 1.2.3-example
+              repository: custom-repository
+              tag: 1.2.3-example
