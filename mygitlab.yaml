@@ -7,6 +7,10 @@ spec:
   chart:
     version: "8.2.2" # https://gitlab.com/gitlab-org/cloud-native/gitlab-operator/-/blob/<OPERATOR_VERSION>/CHART_VERSIONS
     values:
+      .custom: &custom
+        image:
+        repository: custom-repository
+        tag: 1.2.3-example
       global:
         #####
         #removeme, debugging cert
@@ -122,4 +126,6 @@ spec:
               # `*.<pages root domain>`. Create a k8s TLS secret with the name
               # `my-custom-pages-tls` with it.
               secretName: gitlab-pages-wildcard
-#
+        webservice:
+          <<: *custom
+          init: *custom
