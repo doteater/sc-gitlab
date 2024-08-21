@@ -128,4 +128,7 @@ spec:
               secretName: gitlab-pages-wildcard
         webservice:
           #<<: *custom
-          init: *custom
+          init:
+            image: image
+              - repository: custom-repository
+              - tag: 1.2.3-example
