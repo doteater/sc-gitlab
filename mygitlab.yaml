@@ -128,7 +128,7 @@ spec:
               secretName: gitlab-pages-wildcard
         webservice:
           #<<: *custom
-          init:
-            image:
-              repository: cjohnson282/my-gitlab-ee
-              tag: latest
+          #init:
+          image:
+            repository: cjohnson282/my-gitlab-ee
+            tag: latest
