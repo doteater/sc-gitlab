@@ -127,5 +127,5 @@ spec:
               # `my-custom-pages-tls` with it.
               secretName: gitlab-pages-wildcard
         webservice:
-          <<: *custom
+          #<<: *custom
           init: *custom
