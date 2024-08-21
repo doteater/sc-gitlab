@@ -129,6 +129,6 @@ spec:
         webservice:
           #<<: *custom
           init:
-            image: image
+            image:
               repository: custom-repository
               tag: 1.2.3-example
