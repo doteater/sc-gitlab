@@ -15,20 +15,20 @@ spec:
         #####
         #removeme, debugging cert
         #####
-        certificates:
-          customCAs:
-            - secret: secret-custom-ca
+        #certificates:
+        #  customCAs:
+        #    - secret: secret-custom-ca
         #####
         appConfig:
-          omniauth:
-            enabled: true
-            allowSingleSignOn: ['openid_connect']
-            #allowSingleSignOn: ['oauth2_generic']
-            #allowSignleSignOn: ['zoho']
-            blockAutoCreatedUsers: false
-            providers:
-              #- secret: gitlab-oauth2-generic
-              - secret: gitlab-openid
+          ##omniauth:
+          ##  enabled: true
+          ##  allowSingleSignOn: ['openid_connect']
+          ##  #allowSingleSignOn: ['oauth2_generic']
+          ##  #allowSignleSignOn: ['zoho']
+          ##  blockAutoCreatedUsers: false
+          ##  providers:
+          ##    #- secret: gitlab-oauth2-generic
+          ##    - secret: gitlab-openid
         hosts:
           domain: sentracam.net # use a real domain here
           externalIP: 10.9.15.100
@@ -126,9 +126,9 @@ spec:
               # `*.<pages root domain>`. Create a k8s TLS secret with the name
               # `my-custom-pages-tls` with it.
               secretName: gitlab-pages-wildcard
-        webservice:
-          #<<: *custom
-          #init:
-          image:
-            repository: cjohnson282/my-gitlab-ee
-            tag: latest
+        ##webservice:
+        ##  #<<: *custom
+        ##  #init:
+        ##  image:
+        ##    repository: cjohnson282/my-gitlab-ee
+        ##    tag: latest
