@@ -5,7 +5,7 @@ metadata:
   namespace: gitlab-system
 spec:
   chart:
-    version: "8.2.2" # https://gitlab.com/gitlab-org/cloud-native/gitlab-operator/-/blob/<OPERATOR_VERSION>/CHART_VERSIONS
+    version: "8.2.5" # https://gitlab.com/gitlab-org/cloud-native/gitlab-operator/-/blob/<OPERATOR_VERSION>/CHART_VERSIONS
     values:
       #.custom: &custom
       #  image:
