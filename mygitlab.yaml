@@ -25,7 +25,7 @@ spec:
               main:
                 label: 'LDAP'
                 host: 'ldap.sentracam.net'
-                port: 636
+                port: 389
                 uid: 'sAMAccountName'
                 bind_dn: 'CN=gitlab,CN=Users,DC=corp,DC=sentracam,DC=net'
                 password: #'P@ssw0rd'
