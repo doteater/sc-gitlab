@@ -32,6 +32,7 @@ spec:
                   secret: my-ldap-password
                   key: password
                 #encryption: 'simple_tls'
+                encryption: 'plain'
                 #verify_certificates: true
                 timeout: 10
                 active_directory: true
