@@ -20,6 +20,27 @@ spec:
         #    - secret: secret-custom-ca
         #####
         appConfig:
+          ldap:
+            servers:
+              main:
+                label: 'LDAP'
+                host: 'ldap.sentracam.net'
+                port: 636
+                uid: 'sAMAccountName'
+                bind_dn: 'CN=gitlab,CN=Users,DC=corp,DC=sentracam,DC=net'
+                password: #'P@ssw0rd'
+                  secret: my-ldap-password
+                  key: password
+                #encryption: 'simple_tls'
+                #verify_certificates: true
+                timeout: 10
+                active_directory: true
+                #user_filter: '(employeeType=developer)'
+                base: 'CN=Users,DC=corp,DC=sentracam,DC=net'
+                lowercase_usernames: false
+                retry_empty_result_with_codes: [80]
+                allow_username_or_email_login: false
+                block_auto_created_users: false
           ##omniauth:
           ##  enabled: true
           ##  allowSingleSignOn: ['openid_connect']
